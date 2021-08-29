@@ -1,2 +1,2 @@
 # photoEraser
-![image](photoEraser/showImages/1.PNG)
+![image](./showImages/1.PNG)
