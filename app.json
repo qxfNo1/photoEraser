@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/imgDewatering/imgDewatering",
+    "pages/designWatermark/designWatermark",
+    "pages/deleteObject/deleteObject",
+    "pages/imageProcess/imageProcess",
+    "pages/splicePhoto/splice",
+    "pages/spliceMenu/spliceMenu",
+    "pages/poster/poster",
+    "pages/personal/personal"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cc9999",
+    "navigationBarTitleText": "照片橡皮擦",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

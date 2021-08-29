@@ -1,0 +1,10 @@
+<view class="page-body-wrapper">
+  <image class="logo" src='../../static/images/logo2.png' mode='widthFix'></image>
+  <image class="bg-img" src='../../static/images/background.png' mode='widthFix'></image>
+  <view class="btn-area">
+    <navigator class="btn btn1" hover-class="none" url="../imageProcess/imageProcess"><text class="icon1"></text><text class="text">水印处理</text></navigator>
+    <navigator class="btn btn2" hover-class="none" url="../spliceMenu/spliceMenu"><text class="icon2"></text><text class="text">图片美化</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../personal/personal"><text class="icon3"></text><text class="text">个人中心</text></navigator>
+  </view>
+</view>
+

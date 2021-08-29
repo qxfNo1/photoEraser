@@ -1,0 +1,10 @@
+<view class="page-body-wrapper">
+  <image class="logo" src='../../static/images/logo2.png' mode='widthFix'></image>
+  <image class="bg-img" src='../../static/images/background.png' mode='widthFix'></image>
+  <view class="btn-area">
+    <navigator class="btn btn1" hover-class="none" url="../imgDewatering/imgDewatering"><text class="icon1"></text><text class="text">图片去水印</text></navigator>
+    <navigator class="btn btn2" hover-class="none" url="../designWatermark/designWatermark"><text class="icon2"></text><text class="text">图片加水印</text></navigator>
+    <navigator class="btn btn3" hover-class="none" url="../deleteObject/deleteObject"><text class="icon3"></text><text class="text">删除物体</text></navigator>
+  </view>
+</view>
+

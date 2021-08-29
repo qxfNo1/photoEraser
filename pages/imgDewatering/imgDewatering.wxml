@@ -1,0 +1,41 @@
+<!--pages/imgDewatering/imgDewatering.wxml-->
+<view class="dewaterContainer">
+  <!-- 主页面 -->
+  <view class="imageView {{showModal?'toBlack':''}}" style="height:{{imgViewHeight}}px" bindtap = "handleCancel">
+    <view class="noImageBox" wx:if="{{imageNotChoosed}}"  ><text>点击选择图片</text></view>
+    <image class="{{showModal?'toTransparent':''}}" src="{{tempImageSrc}}" data-url="{{tempImageSrc}}" bindlongpress = "showModal" style="width:{{imgWidth}}px;height:{{imgHeight}}px;top:{{imgTop}}px;left:{{imgLeft}}px" disable-scroll="true"></image>
+  </view>  
+     <!-- 主页面-底部 <image src="../../image/1.svg"></image>-->
+  <view class="toolbar-bottom" wx:if="{{!showModal}}">
+      <view class="imgOperate"> 
+        <view class="text chooseImg" bindtap = "chooseImg"><text class="iconfont icon-shangyiqu101" ></text><text >选择图片</text></view>
+        <view class="text deWater"><text class="iconfont icon-shangyiqu101"></text><text>去水印</text></view>    
+      </view>
+      <view class="share" bindtap = "showModal"><text>点击分享</text></view>
+  
+     </view>
+
+     <!-- 显示模态框 -->
+     <view class="shareModal" wx:else>
+         <button class="shareItem weixin" open-type="share">
+               <text class="iconfont icon-weixin1"></text>
+               <view class="text">微信</view>
+         </button>  
+         <button class="shareItem save" bindtap = "handleSave">
+            <text class="iconfont icon-download-1-copy"></text>
+            <view class="text">保存图片</view>
+        </button>  
+        <button class="shareItem shareHaibao">
+            <text class="iconfont icon-tupian"></text>
+            <view class="text">分享海报</view>
+        </button>    
+        <view class="cancel" bindtap = "handleCancel">
+            <text> 取  消</text>  
+        </view>     
+     </view>
+       
+
+  
+  
+</view>
+  
